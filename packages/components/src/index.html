@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/sten-baidu-map.esm.js"></script>
+    <script nomodule src="/build/sten-baidu-map.js"></script>
+  </head>
+  <body>
+    <!-- <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component> -->
+    <baidu-map ak="oW2UEhdth2tRbEE4FUpF9E5YVDCIPYih" style="height: 80vh; width: 80vh"></baidu-map>
+  </body>
+</html>
+
+<script>
+  // setTimeout(() => {
+
+   const baiduMap = document.querySelector('baidu-map')
+   baiduMap.autoResize = true
+   baiduMap.center = {lng: 116.404, lat: 39.915}
+   baiduMap.zoom = 15
+   baiduMap.scrollWheelZoom = true
+  // }, 3000);
+
+</script>
